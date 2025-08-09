@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado pela sua compra!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* fundo branco puro */
+            color: #222;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .text h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .text p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .highlight {
+            color: #a8641a;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container text">
+        <h1>Olá <span class="highlight">%%customer_name%%</span>,<br>Obrigado pela sua compra!</h1>
+        <p>Cada peça que produzimos carrega a <span class="highlight">tradição</span>, a <span class="highlight">qualidade</span> e o <span class="highlight">cuidado</span> da cerâmica artesanal.</p>
+        <p>Esperamos que nossos produtos tragam beleza, aconchego e personalidade ao seu espaço.<br>
+        Sua satisfação é a nossa maior recompensa!</p>
+        <p>Entraremos em contato através do seu e-mail: <strong>%%customer_email%%</strong></p>
+    </div>
+
+    <footer>
+        Equipe Fontoura & Kiehl
+    </footer>
+
+    <!-- Script oficial Yampi para preencher variáveis -->
+    <script>
+        var yampiThankYouScript = document.createElement('script');
+        yampiThankYouScript.setAttribute('src', 'https://cdn.yampi.me/thankyou/thankyou.min.js');
+        yampiThankYouScript.setAttribute('type', 'text/javascript');
+        document.getElementsByTagName('head')[0].appendChild(yampiThankYouScript);
+    </script>
+
+    <!-- Google Ads Conversion -->
+    <!--
+    <script>
+        gtag('event', 'conversion', {'send_to': 'AW-SEU_ID/conversion_label'});
+    </script>
+    -->
+</body>
+</html>
+
